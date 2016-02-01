@@ -1,4 +1,4 @@
-var app = angular.module('StarterApp', ['ngMaterial','ngAnimate','ngTouch','ui.bootstarp']);
+var app = angular.module('StarterApp', ['ngMaterial']);
 app.config(function($mdThemingProvider) {
   })
 
