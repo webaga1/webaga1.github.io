@@ -5,7 +5,7 @@ angular.module('StarterApp',['ngMaterial'])
     var self = this, j= 0, counter = 0;
     self.mode = 'query';
     self.activated = true;
-    self.determinateValue = 30;
+    self.determinateValue = 10;
 
     self.modes = [ ];
     /**
@@ -15,12 +15,12 @@ angular.module('StarterApp',['ngMaterial'])
         if ( !self.activated ) self.modes = [ ];
         if (  self.activated ) {
           j = counter = 0;
-          self.determinateValue = 30;
+          self.determinateValue = 10;
         }
     };
     $interval(function() {
       self.determinateValue += 1;
-      if (self.determinateValue > 100) self.determinateValue = 100;
+      if (self.determinateValue > 100) self.determinateValue = 0;
       /*
         // Incrementally start animation the five (5) Indeterminate,
         // themed progress circular bars
