@@ -1,14 +1,14 @@
 
 .fullBg {
     position: fixed;
-    top: 0;
+    top: 50px;
     left: 0;
 }
 
 .nav {
     position: absolute;
     right: 35px;
-    top: 35px;
+    top: 50px;
     z-index: 110;
     float: none;
     clear: both;
