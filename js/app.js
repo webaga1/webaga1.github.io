@@ -2,11 +2,11 @@ var app = angular.module('website', ['ngAnimate', 'ui.bootstrap']);
 
 app.controller('MainCtrl', function ($scope, $timeout, QueueService) {
     var INTERVAL = 3000,
-        slides = [{id:"image00", src:"./img/image00.jpg"},
-        {id:"image01", src:"./img/image01.jpg"},
-        {id:"image02", src:"./img/image02.jpg"},
-        {id:"image03", src:"./img/image03.jpg"},
-        {id:"image04", src:"./img/image04.jpg"}];
+        slides = [{ image:"img/image00.jpg"},
+        {image:"img/image01.jpg"},
+        {image:"img/image02.jpg"},
+        {image:"img/image03.jpg"},
+        {image:"img/image04.jpg"}];
 
     function setCurrentSlideIndex(index) {
         $scope.currentIndex = index;

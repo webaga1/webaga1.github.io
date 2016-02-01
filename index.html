@@ -37,9 +37,9 @@
   <md-progress-linear md-mode="determinate" value="{{vm.determinateValue}}"></md-progress-linear>
 <div ng-app="website">
   <div ng-controller="MainCtrl">
-    <img  bg-image class="fullBg {{currentAnimation}}" ng-repeat="slide in slides"
+    <img ng-show="loaded" bg-image class="fullBg {{currentAnimation}}" ng-repeat="slide in slides"
          ng-if="isCurrentSlideIndex($index)"
-         ng-src="{{slide.src}}">
+         ng-src="{{slide.image}}">
 
     <ul ng-show="loaded" class="nav nav-pills">
         <li ng-class="{'active':isCurrentAnimation('slide-left-animation')}"><a ng-click="setCurrentAnimation('slide-left-animation')">LEFT</a></li>
