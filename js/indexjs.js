@@ -1,6 +1,6 @@
 var app = angular.module('StarterApp', ['ngMaterial']);
 app.config(function($mdThemingProvider) {
-  });
+  })
 
 app.controller('AppCtrl', ['$scope', '$interval', function($scope, $interval){
    var self = this, j= 0, counter = 0;
