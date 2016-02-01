@@ -35,7 +35,7 @@
     </span>
   </md-toolbar>
   <md-progress-linear md-mode="determinate" value="{{vm.determinateValue}}"></md-progress-linear>
-<div ng-app="website">
+<div ng-app="website" style="margin-top:50px;">
   <div ng-controller="MainCtrl">
     <div class="col-xs-12" ng-if="progress !== 100">
         <progressbar class="progress-striped" value="progress">{{progress | number:0}}%</progressbar>
